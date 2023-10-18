@@ -1,0 +1,41 @@
+{
+  "name": "ignite-2k23-proj-03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.ts",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.4",
+    "@types/node": "20.5.7",
+    "@typescript-eslint/eslint-plugin": "6.5.0",
+    "@vitest/coverage-v8": "0.34.6",
+    "eslint": "8.48.0",
+    "eslint-config-standard-with-typescript": "39.0.0",
+    "eslint-plugin-import": "2.28.1",
+    "eslint-plugin-n": "16.0.2",
+    "eslint-plugin-promise": "6.1.1",
+    "prisma": "5.2.0",
+    "tsup": "7.2.0",
+    "tsx": "3.12.7",
+    "typescript": "5.2.2",
+    "vite-tsconfig-paths": "4.2.1",
+    "vitest": "0.34.6"
+  },
+  "dependencies": {
+    "@prisma/client": "5.2.0",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.3.1",
+    "fastify": "4.22.0",
+    "zod": "3.22.2"
+  }
+}
