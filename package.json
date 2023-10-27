@@ -12,7 +12,7 @@
     "test": "vitest run --dir src/use-cases",
     "test:watch": "vitest --dir src/use-cases",
     "pretest:e2e": "run-s test:create-prisma-environment test:install-prisma-environment",
-    "test:e2e": "vitest run --dir src/use-cases",
+    "test:e2e": "vitest run --dir src/http",
     "test:e2e:watch": "vitest --dir src/http",
     "test:coverage": "vitest run --coverage"
   },
@@ -40,6 +40,7 @@
     "vitest": "0.34.6"
   },
   "dependencies": {
+    "@fastify/cookie": "9.1.0",
     "@fastify/jwt": "7.2.2",
     "@prisma/client": "5.2.0",
     "bcryptjs": "2.4.3",
