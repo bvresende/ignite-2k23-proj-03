@@ -26,7 +26,7 @@ describe('Refresh Token e2e', () => {
         email: 'johndoe@example.com',
         password: '123456'
       })
-    console.log(authResponse)
+
     const cookies = authResponse.get('Set-Cookie')
 
     const response = await request(app.server)
