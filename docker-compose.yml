@@ -2,7 +2,7 @@ version: '3'
 
 services:
   api-solid-pg:
-    image: a7cd6c570c81de481ebcadcb3dc310bb9cc4f5f9fe6dd05ba2a96e58fceee2ad
+    image: bitnami/postgresql
     ports:
       - 5432:5432
     environment:
